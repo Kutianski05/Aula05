@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Testes de Box-Sizing e Position</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* BOX SIZING            */
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid #333;
+            margin-bottom: 20px;
+            background-color: #d9eaff;
+        }
+
+        .content-box {
+            
+        }
+
+        .border-box {
+            
+        }
+
+        /* POSITION              */
+        
+        .position-container {
+            position: relative;
+            height: 200px;
+            background-color: #eee;
+            border: 2px dashed #aaa;
+            margin-top: 20px;
+        }
+
+        .static {
+            position: ;
+            background-color: #ffd9d9;
+        }
+
+        .relative {
+            position: ;
+           
+
+            background-color: #fff3cd;
+        }
+
+        .absolute {
+            position: ;
+            
+
+            background-color: #d4edda;
+        }
+
+        .fixed {
+            position: ;
+           
+
+            background-color: #cce5ff;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        .sticky {
+            position: sticky;
+            
+
+            background-color: #e2d6ff;
+            padding: 10px;
+        }
+
+        .demo-box {
+            padding: 15px;
+            border: 2px solid #333;
+            width: 150px;
+        }
+
+        .spacer {
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Testes de Box-Sizing e Position</h1>
+
+    <!-- BOX SIZING            -->
+  
+    <section>
+        <h2>Testando Box-Sizing</h2>
+
+        <div class="box content-box">
+            <strong>content-box</strong><br>
+            width: 300px<br>
+            padding: 20px<br>
+            border: 5px
+        </div>
+
+        <div class="box border-box">
+            <strong>border-box</strong><br>
+            width: 300px<br>
+            padding: 20px<br>
+            border: 5px
+        </div>
+
+    </section>
+
+  
+    <!-- POSITION STATIC       -->
+
+    <section>
+        <h2>Position: static (padrão)</h2>
+        <div class="demo-box static">
+            Eu sou static
+        </div>
+    </section>
+
+  
+    <!-- POSITION RELATIVE     -->
+
+    <section>
+        <h2>Position: relative</h2>
+        <div class="demo-box relative">
+            Eu sou relative
+        </div>
+    </section>
+
+  
+    <!-- POSITION ABSOLUTE     -->
+
+    <section>
+        <h2>Position: absolute</h2>
+        <div class="position-container">
+            Container (position: relative)
+
+            <div class="demo-box absolute">
+                Eu sou absolute
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- POSITION STICKY       -->
+
+    <section>
+        <h2>Position: sticky</h2>
+
+        <div class="sticky">
+            Eu sou sticky
+        </div>
+
+        <div class="spacer"></div>
+    </section>
+
+  
+    <!-- POSITION FIXED        -->
+
+    <div class="fixed">
+        Eu sou fixed
+    </div>
+
+</body>
+</html>
