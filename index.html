@@ -38,7 +38,7 @@
         }
 
         .border-box {
-            
+            box-sizing: border-box;
         }
 
         /* POSITION              */
@@ -52,26 +52,32 @@
         }
 
         .static {
-            position: ;
+            position: static;
             background-color: #ffd9d9;
         }
 
         .relative {
-            position: ;
+            position: relative;
+            top: 30px;
+            left: 50px;
            
 
             background-color: #fff3cd;
         }
 
         .absolute {
-            position: ;
+            position: absolute;
+            top: 12px;
+            right: 100px;
             
 
             background-color: #d4edda;
         }
 
         .fixed {
-            position: ;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
            
 
             background-color: #cce5ff;
@@ -81,6 +87,8 @@
 
         .sticky {
             position: sticky;
+            top: 10px;
+            z-index: 1000;
             
 
             background-color: #e2d6ff;
